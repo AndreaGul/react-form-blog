@@ -12,7 +12,6 @@
     align-items: center;
 }
 
-/* Styles for the main container */
 .container {
     display: flex;
     flex-direction: column;
@@ -27,7 +26,7 @@
     box-sizing: border-box;
 }
 
-/* Styles for the form container */
+
 .form-container {
     display: flex;
     flex-direction: column;
@@ -39,13 +38,13 @@
 /* Styles for the input field */
 .input-css {
     width: 100%;
-    padding: 10px;
+    padding: 10px 15px;
     border: 1px solid #93827F;
     border-radius: 5px;
-    box-sizing: border-box;
+   
 }
 
-/* Styles for the submit button */
+
 .button-css {
     padding: 10px 15px;
     background-color: #dbe2c3;
@@ -64,20 +63,17 @@
     background-color: #F3F9D2;
 }
 
-/* Container for the list items */
+
 .ul-container {
     width: 100%;
     max-height: 300px;
     overflow-y: auto;
     margin-top: 20px;
-   
     border-radius: 5px;
-   
-    
     box-sizing: border-box;
 }
 
-/* Styles for the unordered list */
+
 .ul-css {
     list-style-type: none;
     padding: 0;
@@ -85,7 +81,7 @@
     width: 100%;
 }
 
-/* Styles for the list items */
+
 .li-css {
     display: flex;
     justify-content: space-between;
@@ -100,20 +96,27 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Styles for the delete button */
-.li-css button {
-    padding: 5px 10px;
-    background-color: #6e615f;
-    font-size: 12px;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.container-icons{
+    width: 30%;
+    text-align: center;
 }
 
-.li-css button:hover {
-    background-color: #928684;
+.li-css h5,.save-icon,.edit-icon,.delete-icon {
+    margin: 0 5px;
+ }
+
+.li-css .save-icon:hover,.edit-icon:hover,.delete-icon:hover {
+   color: #2F2F2F;
+}
+
+
+.input-update {
+    
+    width: 70%;
+    border: 1px solid #93827F;
+    border-radius: 5px;
+    padding:  5px;
+   
 }
 
 .testo-articolo{
