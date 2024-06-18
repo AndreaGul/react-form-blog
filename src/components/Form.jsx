@@ -22,16 +22,17 @@ export default function(){
 
     return(
         <>
-       <form onSubmit={onSubmit}>
-        <input type="text"
+        <div className="container">
+       <form onSubmit={onSubmit} className='form-container'>
+        <input type="text" className='input-css'
             value={articleName}
             onChange={ e => setArticleName(e.target.value)}
         />
-        <button>invia</button>
+        <button className='button-css'>invia</button>
        </form>
-       <ul>
+       <ul className='ul-css'>
         {articles.map((article,index)=>(
-             <li key={`article${index}`}>
+             <li key={`article${index}`} className='li-css'>
                 {article}
                 <button onClick={()=>removeArticle(index)}>elimina</button>
              </li>
@@ -39,6 +40,7 @@ export default function(){
         ))}
        
        </ul>
+       </div>
         </>
     )
 }
