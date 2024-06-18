@@ -105,11 +105,15 @@
     margin: 0 5px;
  }
 
+ 
+
 .li-css .save-icon:hover,.edit-icon:hover,.delete-icon:hover {
    color: #2F2F2F;
 }
 
-
+.li-css h5{
+    width: 70%;
+ }
 .input-update {
     
     width: 70%;
