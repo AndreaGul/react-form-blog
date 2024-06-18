@@ -16,6 +16,10 @@ export default function(){
 
     }
 
+    const removeArticle = (articleIndex)=>{
+        setArticles(array => array.filter((value,i)=> i !== articleIndex));
+    }
+
     return(
         <>
        <form onSubmit={onSubmit}>
@@ -25,6 +29,16 @@ export default function(){
         />
         <button>invia</button>
        </form>
+       <ul>
+        {articles.map((article,index)=>(
+             <li key={`article${index}`}>
+                {article}
+                <button onClick={()=>removeArticle(index)}>elimina</button>
+             </li>
+             
+        ))}
+       
+       </ul>
         </>
     )
 }
