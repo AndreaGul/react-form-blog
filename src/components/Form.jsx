@@ -44,6 +44,7 @@ export default function() {
                             type="text"
                             className='input-css'
                             value={articleName}
+                            placeholder='Scrivi un articolo'
                             onChange={e => setArticleName(e.target.value)}
                         />
                         <button className='button-css' disabled={(articleName) === ''}>
